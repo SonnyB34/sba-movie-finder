@@ -2,8 +2,14 @@ import 'dotenv/config.js';
 import express from 'express';
 import movieRoutes from './routes/movieRoutes.js';
 
+console.log('Key is:', process.env.OMDB_API_KEY);
+
 const app = express();
-const port = 3000;
+const port = 4000;
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
 
 app.use('/api', movieRoutes);
 
