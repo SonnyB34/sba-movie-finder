@@ -8,5 +8,5 @@ const port = 3000;
 app.use('/api', movieRoutes);
 
 app.listen(port, (req, res) => {
-  console.log(`Server running on port:${port}`);
+  console.log(`Server running on http://localhost:${port}`);
 });
